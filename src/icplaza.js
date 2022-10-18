@@ -13,8 +13,8 @@ var _getCallbackName = function () {
 }
 
 var _sendIcplazaRequest = function (methodName, params, callback) {
-    if (window.ICPLAZAJSBrigeClient) {
-        window.ICPLAZAJSBrigeClient.callMessage(methodName, params, callback)
+    if (window.android) {
+        window.android.callMessage(methodName, params, callback)
     }
     // ios
     if (window.webkit) {
