@@ -28,10 +28,10 @@ var _sendIcplazaRequest = function (methodName, params, callback) {
 }
 
 var icplaza = {
-    version: '3.7.5',
+    version: '1.0.1',
     isConnected: function () {
         return !!(
-            window.TPJSBrigeClient ||
+            window.android ||
             (window.webkit &&
                 window.webkit.messageHandlers &&
                 window.webkit.messageHandlers.getDeviceId)
